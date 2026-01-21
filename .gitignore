@@ -1,7 +1,18 @@
+# ROS2 build artifacts
 build/
 install/
 log/
-.colcon/
-.vscode/
-*.pyc
+
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# VS Code
+.vscode/
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
