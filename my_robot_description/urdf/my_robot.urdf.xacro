@@ -9,8 +9,9 @@
     <xacro:include filename="camera.xacro" />
 
     <joint name="mobile_base_arm_joint" type="fixed">
-        <parent link="base_link"/>
-        <child link="arm_base_link"/>
-        <origin xyz="${base_length/4} 0 ${base_height}" rpy="0 0 0"/>
+        <parent link="base_link" />
+        <child link="arm_base_link" />
+        <origin xyz="${base_length / 4.0} 0 ${base_height}" rpy="0 0 0" />
     </joint>
+
 </robot>
