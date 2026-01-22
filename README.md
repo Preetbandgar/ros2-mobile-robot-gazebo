@@ -7,9 +7,6 @@
 
 A complete ROS2 robotics simulation featuring a **differential-drive mobile robot** with a **simple 2-DOF arm** and **camera sensor** in Gazebo Harmonic. Includes teleoperation control, sensor integration, and complete URDF modeling.
 
-> **Course Project**: Built following the **ROS2 For Beginners (Level 2)** course by **Edouard Renard (Udemy)**  
-> **Control**: Manual teleoperation via keyboard (not autonomous)
-
 ---
 
 ## 🎥 Demo
