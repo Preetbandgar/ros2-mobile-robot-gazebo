@@ -1,18 +1,38 @@
-# ROS2 build artifacts
+# ROS2 Workspace
 build/
 install/
 log/
 
 # Python
-__pycache__/
 *.pyc
-*.pyo
-*.egg-info/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 
-# VS Code
+# IDE
 .vscode/
-*.db
+.idea/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.pydevproject
+.settings/
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# ROS
+CATKIN_IGNORE
+
+# Gazebo
+*.log
