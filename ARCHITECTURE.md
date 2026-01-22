@@ -347,48 +347,6 @@ ament_package()
 - `ros_gz_bridge` (exec)
 - `rviz2` (exec)
 
-## Design Decisions
-
-### Why Xacro?
-
-1. **Modularity**: Separate files for each component
-2. **Reusability**: Macros for repeated patterns
-3. **Maintainability**: Easy to modify individual components
-4. **Parameterization**: Properties for easy configuration
-
-### Why XML Launch Files?
-
-While Python launch files offer more flexibility, XML launch files are:
-- Easier to read for simple configurations
-- Declarative and intuitive
-- Sufficient for this project's needs
-- Can be easily converted to Python if needed
-
-### Bridge Configuration
-
-The bridge is configured via YAML instead of launch arguments for:
-- Better organization
-- Easy modification without recompiling
-- Clear topic mapping visualization
-- Easier to add new topics
-
-## Performance Considerations
-
-### Simulation Performance
-
-- **Physics update rate**: Default 1000 Hz
-- **RTF (Real-Time Factor)**: Depends on hardware
-- **Optimization tips**:
-  - Reduce sensor update rates if needed
-  - Simplify collision geometries
-  - Use appropriate solver parameters
-
-### Memory Usage
-
-- Gazebo: ~500MB-1GB
-- ROS2 nodes: ~200MB
-- Total: ~1-1.5GB typical
-
 ## Extension Points
 
 ### Adding New Sensors
