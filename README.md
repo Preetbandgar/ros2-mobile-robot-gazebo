@@ -218,8 +218,7 @@ More help: See [QUICKSTART.md](QUICKSTART.md) and [ARCHITECTURE.md](ARCHITECTURE
 - Learning: Topic naming conventions differ between ROS2 and Gazebo
 
 ### Systematic Debugging Approach
-- Used: `ros2 topic info`, `gz topic -l`, `rqt_graph`
-- Leveraged AI assistance (Gemini) for configuration analysis
+- Used: `ros2 topic info`, `gz topic -l`, `rqt_graph` (See screenshots folder for reference)
 - Learning: Methodical troubleshooting with the right tools reduces time waste
 
 ---
