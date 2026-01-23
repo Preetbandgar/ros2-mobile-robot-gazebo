@@ -113,10 +113,11 @@ ros2-mobile-robot-gazebo/
 
 ### Keyboard Teleoperation
 ```text
-    i            Move forward
-j   k   l        Turn left / Stop / Turn right
-    ,            Move backward
+    i            
+j   k   l        
+    ,            
 ```
+**Key bindings:** `i=forward`, `j=left`, `l=right`, `k=stop`, `,=backward`
 
 ### ROS2 Commands
 
