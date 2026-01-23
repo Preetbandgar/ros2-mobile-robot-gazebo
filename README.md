@@ -31,42 +31,42 @@ A complete ROS2 robotics simulation featuring a **differential-drive mobile robo
 
 ### Installation
 
-```bash
 # Install ROS2 Jazzy
-sudo apt install ros-jazzy-desktop
+ `sudo apt install ros-jazzy-desktop`
 
 # Install Gazebo Harmonic
-sudo apt install gz-harmonic
+ `sudo apt install gz-harmonic`
 
 # Install dependencies
-sudo apt install -y \
+ ```bash
+  sudo apt install -y \
   ros-jazzy-robot-state-publisher \
   ros-jazzy-ros-gz-sim \
   ros-jazzy-ros-gz-bridge \
   ros-jazzy-xacro \
   ros-jazzy-rviz2 \
   ros-jazzy-teleop-twist-keyboard
-
+  ```
 # Build workspace
-cd ~/ros2_ws
-colcon build --symlink-install
-source install/setup.bash
-```
+```bash
+ cd ~/ros2_ws
+ colcon build --symlink-install
+ source install/setup.bash
+ ```
 
 ### Run Simulation
 
-```bash
 # Launch Gazebo + RViz
-ros2 launch my_robot_bringup my_robot_gazebo.launch.xml
+`ros2 launch my_robot_bringup my_robot_gazebo.launch.xml`
 
 # Control robot (new terminal)
-ros2 run teleop_twist_keyboard teleop_twist_keyboard
+`ros2 run teleop_twist_keyboard teleop_twist_keyboard`
 # Use: i=forward, j=left, l=right, k=stop
 
 # Control arm
-ros2 topic pub -1 /joint0/cmd_pos std_msgs/msg/Float64 "data: 1.57"
-ros2 topic pub -1 /joint1/cmd_pos std_msgs/msg/Float64 "data: 0.785"
-```
+`ros2 topic pub -1 /joint0/cmd_pos std_msgs/msg/Float64 "data: 1.57"`
+
+`ros2 topic pub -1 /joint1/cmd_pos std_msgs/msg/Float64 "data: 0.785"`
 
 ---
 
@@ -105,19 +105,18 @@ j   k   l   Turn left / Stop / Turn right
 ```
 
 ### ROS2 Commands
-```bash
+
 # View topics
-ros2 topic list
+`ros2 topic list`
 
 # Check robot state
-ros2 topic echo /joint_states
+`ros2 topic echo /joint_states`
 
 # View TF tree
-ros2 run tf2_tools view_frames
+`ros2 run tf2_tools view_frames`
 
 # System graph
-rqt_graph
-```
+`rqt_graph`
 
 ---
 
@@ -187,7 +186,7 @@ Add this plugin to your `.sdf` world file:
 
 **Build errors:**
 ```bash
-rm -rf build install log
+rm -rf build install log 
 colcon build --symlink-install
 source install/setup.bash
 ```
@@ -219,12 +218,12 @@ During development, I gained hands-on experience with several technical challeng
 
 ## 🚀 Possible Improvements
 
-- [ ] Add Nav2 for autonomous navigation
-- [ ] Integrate SLAM
-- [ ] Add LiDAR sensor
-- [ ] Add gripper end-effector to the arm
-- [ ] Improve arm joint control
-- [ ] Multi-robot simulation
+- Add Nav2 for autonomous navigation
+- Integrate SLAM
+- Add LiDAR sensor
+- Add gripper end-effector to the arm
+- Improve arm joint control
+- Multi-robot simulation
 
 ---
 
@@ -239,7 +238,9 @@ During development, I gained hands-on experience with several technical challeng
 
 ## 📜 Credits
 
-Project completed as part of **ROS2 For Beginners (Level 2)** by **Edouard Renard** on Udemy.
+This repository was developed as a **guided implementation project** aligned with **ROS2 For Beginners (Level 2)** by **Edouard Renard (Udemy)**.  
+The intent is to demonstrate **end-to-end simulation integration** (URDF/Xacro, TF, ROS2 ↔ Gazebo bridging, sensors, launch orchestration) with a documented debugging workflow—beyond simply launching an example.
+
 
 **Author:** Pritam Bandgar  
 **GitHub:** [@Preetbandgar](https://github.com/Preetbandgar)  
