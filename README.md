@@ -32,10 +32,14 @@ A complete ROS2 robotics simulation featuring a **differential-drive mobile robo
 ### Installation
 
 # Install ROS2 Jazzy
- `sudo apt install ros-jazzy-desktop`
+  ```
+  sudo apt install ros-jazzy-desktop
+  ```
 
 # Install Gazebo Harmonic
- `sudo apt install gz-harmonic`
+  ```
+  sudo apt install gz-harmonic
+  ```
 
 # Install dependencies
  ```bash
@@ -57,16 +61,23 @@ A complete ROS2 robotics simulation featuring a **differential-drive mobile robo
 ### Run Simulation
 
 # Launch Gazebo + RViz
-`ros2 launch my_robot_bringup my_robot_gazebo.launch.xml`
-
+ ```
+ ros2 launch my_robot_bringup my_robot_gazebo.launch.xml
+ ```
 # Control robot (new terminal)
-`ros2 run teleop_twist_keyboard teleop_twist_keyboard`
+ ```
+ ros2 run teleop_twist_keyboard teleop_twist_keyboard
+ ``` 
 # Use: i=forward, j=left, l=right, k=stop
 
 # Control arm
-`ros2 topic pub -1 /joint0/cmd_pos std_msgs/msg/Float64 "data: 1.57"`
+ ```
+ ros2 topic pub -1 /joint0/cmd_pos std_msgs/msg/Float64 "data: 1.57"
+ ```
 
-`ros2 topic pub -1 /joint1/cmd_pos std_msgs/msg/Float64 "data: 0.785"`
+ ```
+ ros2 topic pub -1 /joint1/cmd_pos std_msgs/msg/Float64 "data: 0.785"
+ ```
 
 ---
 
@@ -98,26 +109,31 @@ ros2-mobile-robot-gazebo/
 ## 🎮 Usage
 
 ### Keyboard Teleoperation
-```
-    i       Move forward
-j   k   l   Turn left / Stop / Turn right
-    ,       Move backward
-```
+    
+    ```
+       i            Move forward
+    j  k   l      Turn left / Stop / Turn right
+       ,            Move backward
+    ```
 
 ### ROS2 Commands
 
 # View topics
-`ros2 topic list`
-
+ ```
+ ros2 topic list
+ ```
 # Check robot state
-`ros2 topic echo /joint_states`
-
+ ```
+ ros2 topic echo /joint_states`
+ ```
 # View TF tree
-`ros2 run tf2_tools view_frames`
-
+ ```
+ ros2 run tf2_tools view_frames`
+ ```
 # System graph
-`rqt_graph`
-
+ ```
+ rqt_graph
+ ```
 ---
 
 ## 🧠 Key Concepts
@@ -229,7 +245,7 @@ During development, I gained hands-on experience with several technical challeng
 
 ## 📚 Resources
 
-- **Course**: [ROS2 For Beginners (Level 2) - Edouard Renard (Udemy)](https://www.udemy.com/course/ros2-for-beginners/)
+- **Reference curriculum**: [ROS2 For Beginners (Level 2) - Edouard Renard (Udemy)](https://www.udemy.com/course/ros2-for-beginners/)
 - [ROS2 Jazzy Docs](https://docs.ros.org/en/jazzy/)
 - [Gazebo Harmonic Docs](https://gazebosim.org/docs/harmonic)
 - [URDF Tutorials](http://wiki.ros.org/urdf/Tutorials)
