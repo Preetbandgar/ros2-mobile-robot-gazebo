@@ -1,4 +1,4 @@
-# 🤖 ROS2 Mobile Robot with 2-DOF Arm – Gazebo Simulation
+# 🤖 ROS2 Differential-Drive Mobile Robot Simulation
 
 ![ROS2](https://img.shields.io/badge/ROS2-Jazzy-blue)
 ![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-green)
