@@ -253,4 +253,4 @@ This project was developed as part of an independent deep-dive into ROS2 Jazzy a
 
 ## 📞 Support
 
-Issues? Check [Troubleshooting](#troubleshooting) or open a GitHub issue.
+Issues? Check troubleshooting section or open a GitHub issue.
