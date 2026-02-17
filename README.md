@@ -241,13 +241,13 @@ More help: See [QUICKSTART.md](QUICKSTART.md) and [ARCHITECTURE.md](ARCHITECTURE
 
 ---
 
-## 📜 Credits
+## 📜 Acknowledgments & References
+This project was developed as part of an independent deep-dive into ROS2 Jazzy and Gazebo Harmonic integration. It follows industry-standard URDF modularization and simulation bridging techniques.
 
-This repository was developed as a **guided implementation project** aligned with **ROS2 For Beginners (Level 2)** by **Edouard Renard (Udemy)**.  
-The intent is to demonstrate **end-to-end simulation integration** (URDF/Xacro, TF, ROS2 ↔ Gazebo bridging, sensors, launch orchestration) with a documented debugging workflow—beyond simply launching an example.
+**Framework Inspiration:** ROS2 Robotics Development Workflows
 
-**Author:** Pritam Bandgar  
-**GitHub:** [@Preetbandgar](https://github.com/Preetbandgar)  
+**Author:** Pritam Bandgar
+
 **License:** Apache-2.0
 
 ---
