@@ -234,7 +234,6 @@ More help: See [QUICKSTART.md](QUICKSTART.md) and [ARCHITECTURE.md](ARCHITECTURE
 ---
 
 ## 📚 Resources
-- **Reference curriculum**: [ROS2 For Beginners (Level 2) - Edouard Renard (Udemy)](https://www.udemy.com/course/ros2-for-beginners/)
 - [ROS2 Jazzy Docs](https://docs.ros.org/en/jazzy/)
 - [Gazebo Harmonic Docs](https://gazebosim.org/docs/harmonic)
 - [URDF Tutorials](http://wiki.ros.org/urdf/Tutorials)
