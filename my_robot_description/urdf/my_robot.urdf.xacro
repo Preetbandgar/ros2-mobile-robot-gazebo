@@ -7,6 +7,7 @@
     <xacro:include filename="arm.xacro" />
     <xacro:include filename="arm_gazebo.xacro" />
     <xacro:include filename="camera.xacro" />
+    <xacro:include filename="sensors.xacro" />
 
     <joint name="mobile_base_arm_joint" type="fixed">
         <parent link="base_link" />
